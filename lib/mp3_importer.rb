@@ -15,7 +15,6 @@ class MP3Importer
   end
 
   def import
-    # list_of_filename.each {|filename| Song.new_by_filename(filename)}
     self.files.each do |filename|
       Song.new_by_filename(filename)
     end
